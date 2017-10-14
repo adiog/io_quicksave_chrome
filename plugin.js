@@ -3,7 +3,7 @@
 
 function notify_success(message)
 {
-    browser.notifications.create('qs', {
+    chrome.notifications.create('qs', {
         'type': 'basic',
         'iconUrl': 'icon_green.png',
         'title': 'quicksave.io',
@@ -13,7 +13,7 @@ function notify_success(message)
 
 function notify_failure(message)
 {
-    browser.notifications.create('qs', {
+    chrome.notifications.create('qs', {
         'type': 'basic',
         'iconUrl': 'icon_red.png',
         'title': 'quicksave.io',
@@ -77,7 +77,7 @@ function context_menu_image_callback(info, tab)
 
 function toolbar_button_callback()
 {
-    browser.tabs.query(
+    chrome.tabs.query(
         {
             active: true,
             lastFocusedWindow: true

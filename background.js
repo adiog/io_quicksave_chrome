@@ -1,7 +1,7 @@
 // This file is a part of quicksave project.
 // Copyright (c) 2017 Aleksander Gajewski <adiog@quicksave.io>.
 
-browser.contextMenus.create(
+chrome.contextMenus.create(
     {
         'title': 'quicksave page',
         'contexts': ['page'],
@@ -9,7 +9,7 @@ browser.contextMenus.create(
     }
 );
 
-browser.contextMenus.create(
+chrome.contextMenus.create(
     {
         'title': 'quicksave link',
         'contexts': ['link'],
@@ -17,7 +17,7 @@ browser.contextMenus.create(
     }
 );
 
-browser.contextMenus.create(
+chrome.contextMenus.create(
     {
         'title': 'quicksave selection',
         'contexts': ['selection'],
@@ -25,7 +25,7 @@ browser.contextMenus.create(
     }
 );
 
-browser.contextMenus.create(
+chrome.contextMenus.create(
     {
         'title': 'quicksave image',
         'contexts': ['image'],
@@ -33,4 +33,4 @@ browser.contextMenus.create(
     }
 );
 
-browser.browserAction.onClicked.addListener(toolbar_button_callback);
+chrome.browserAction.onClicked.addListener(toolbar_button_callback);
