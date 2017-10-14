@@ -1,7 +1,8 @@
 {
   "manifest_version": 2,
   "name": "quicksave.io",
-  "version": "0.0",
+  "short_name": "quicksave.io - Chrome Add-on",
+  "version": "0.1",
   "author": "Aleksander Gajewski",
   "description": "quicksave.io - Chrome Add-on",
   "icons": {
