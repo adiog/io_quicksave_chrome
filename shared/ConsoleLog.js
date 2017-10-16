@@ -3,9 +3,9 @@
 
 function do_log(o)
 {
-    if (window.browser && browser.runtime && browser.runtime.id)
+    if (window.chrome && chrome.runtime && chrome.runtime.id)
     {
-        browser.extension.getBackgroundPage().console.log(o);
+        chrome.extension.getBackgroundPage().console.log(o);
     }
     else
     {
